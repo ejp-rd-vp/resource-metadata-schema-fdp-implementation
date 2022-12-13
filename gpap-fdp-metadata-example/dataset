@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 
-<https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5>
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset>
   a dcat:Resource, dcat:Dataset;
   <http://www.w3.org/2000/01/rdf-schema#label> "RD-Connect GPAP";
   dcterms:title "RD-Connect GPAP";
@@ -20,39 +20,39 @@
 7) a platform where any scientist or institution generating or working with PSC lines can register their cell lines, projects or clinical studies""";
 
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
-  dcterms:accessRights <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#accessRights>;
+  dcterms:accessRights <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset#accessRights>;
   dcterms:publisher [ a foaf:Agent;
       foaf:name "Davide Piscia"
     ];
   <http://semanticscience.org/resource/SIO_000628> <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5/metrics/445c0a70d1e214e545b261559e2842f4>,
     <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
-  dcterms:isPartOf <https://platform.rd-connect.eu/hosting_file/catalog/d6fce25d-d506-4aa9-91a9-dd8fcdb0ce3c>;
+  dcterms:isPartOf <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository>;
   dcat:keyword "RD-Connect GPAP", "NGS", "Genomics and phenotypic database";
   dcat:theme <http://www.wikidata.org/entity/Q21014462>, <http://semanticscience.org/resource/SIO_010054>,
     <http://purl.obolibrary.org/obo/NCIT_C47846>, <http://purl.org/ejp-rd/vocabulary/VPQueryable>;
   dcat:distribution 
-    <https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690>,
-    <https://platform.rd-connect.eu/hosting_file/distribution/3d2347d8-8333-41a8-bf42-8f45fbca5394>;
+    <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/distribution>,
+    <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/distribution_api>;
   dcat:contactPoint <mailto:ddsdsdsd>;
   dcat:landingPage <https://platform.rd-connect.eu/about>;
-  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#identifier>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset#identifier>;
   <https://w3id.org/fdp/fdp-o#metadataIssued> "2021-06-24T16:49:18.121883768Z"^^xsd:dateTime;
   <https://w3id.org/fdp/fdp-o#metadataModified> "2022-09-08T09:48:32.739215734Z"^^xsd:dateTime .
 
-<https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#identifier>
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset#identifier>
   a <http://purl.org/spar/datacite/Identifier>;
-  dcterms:identifier "https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5" .
+  dcterms:identifier "https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset" .
 
-<https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#accessRights>
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset#accessRights>
   a dcterms:RightsStatement;
   dcterms:description "This resource has  access restriction" .
 
-<https://platform.rd-connect.eu/hosting_file/distribution/> a ldp:DirectContainer,
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/distribution/> a ldp:DirectContainer,
     ldp:DirectContainer;
-  dcterms:title "Distributions", "Distributions";
-  ldp:hasMemberRelation dcat:distribution, dcat:distribution;
-  ldp:membershipResource <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5>;
-  ldp:contains    <https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690>,
-    <https://platform.rd-connect.eu/hosting_file/distribution/3d2347d8-8333-41a8-bf42-8f45fbca5394>.
+  dcterms:title "Distributions";
+  ldp:hasMemberRelation dcat:distribution;
+  ldp:membershipResource <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset>;
+  ldp:contains    <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/distribution>,
+    <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository_api>.
 
 
