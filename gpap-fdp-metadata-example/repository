@@ -20,6 +20,7 @@
   <https://w3id.org/fdp/fdp-o#metadataIssued> "2021-06-23T10:34:34.293606662Z"^^xsd:dateTime;
   <https://w3id.org/fdp/fdp-o#metadataModified> "2022-09-08T14:37:19.372452382Z"^^xsd:dateTime;
   <https://w3id.org/fdp/fdp-o#fdpSoftwareVersion> "1.15";
+  dcat:dataset <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset>
   dcat:endpointURL <https://platform.rd-connect.eu/hosting_file> .
 
 <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#identifier> a <http://purl.org/spar/datacite/Identifier>;
