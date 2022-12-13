@@ -1,0 +1,58 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5>
+  a dcat:Resource, dcat:Dataset;
+  <http://www.w3.org/2000/01/rdf-schema#label> "RD-Connect GPAP";
+  dcterms:title "RD-Connect GPAP";
+  dcterms:hasVersion "1.0";
+  dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>;
+  dcterms:description """RD-Connect GPAP is a global genomics and clinical data platform for rare diseases
+1) a central and searchable hub for available hPSC-lines
+2) a central registry of clinical studies based on hPSC-lines
+3) a standardized identifier for hPSC-lines and register of these standard names
+4) a trustworthy data source for hPSC-lines by verifying the ethical and biological conformity of registered lines based on community standards
+5) comparability of quality standards in hPSC research
+6) certification of quality and ethical provenance of hPSC-lines
+7) a platform where any scientist or institution generating or working with PSC lines can register their cell lines, projects or clinical studies""";
+
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  dcterms:accessRights <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "Davide Piscia"
+    ];
+  <http://semanticscience.org/resource/SIO_000628> <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5/metrics/445c0a70d1e214e545b261559e2842f4>,
+    <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5/metrics/5d27e854a9e78eb3f663331cd47cdc13>;
+  dcterms:isPartOf <https://platform.rd-connect.eu/hosting_file/catalog/d6fce25d-d506-4aa9-91a9-dd8fcdb0ce3c>;
+  dcat:keyword "RD-Connect GPAP", "NGS", "Genomics and phenotypic database";
+  dcat:theme <http://www.wikidata.org/entity/Q21014462>, <http://semanticscience.org/resource/SIO_010054>,
+    <http://purl.obolibrary.org/obo/NCIT_C47846>, <http://purl.org/ejp-rd/vocabulary/VPQueryable>;
+  dcat:distribution 
+    <https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690>,
+    <https://platform.rd-connect.eu/hosting_file/distribution/3d2347d8-8333-41a8-bf42-8f45fbca5394>;
+  dcat:contactPoint <mailto:ddsdsdsd>;
+  dcat:landingPage <https://platform.rd-connect.eu/about>;
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#identifier>;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2021-06-24T16:49:18.121883768Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2022-09-08T09:48:32.739215734Z"^^xsd:dateTime .
+
+<https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5" .
+
+<https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has  access restriction" .
+
+<https://platform.rd-connect.eu/hosting_file/distribution/> a ldp:DirectContainer,
+    ldp:DirectContainer;
+  dcterms:title "Distributions", "Distributions";
+  ldp:hasMemberRelation dcat:distribution, dcat:distribution;
+  ldp:membershipResource <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5>;
+  ldp:contains    <https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690>,
+    <https://platform.rd-connect.eu/hosting_file/distribution/3d2347d8-8333-41a8-bf42-8f45fbca5394>.
+
+

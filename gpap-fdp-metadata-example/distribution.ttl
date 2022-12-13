@@ -1,0 +1,33 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix ldp: <http://www.w3.org/ns/ldp#> .
+
+<https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690>
+  a dcat:Resource, dcat:Distribution;
+  <http://www.w3.org/2000/01/rdf-schema#label> "Dataservices";
+  dcterms:title "HTML distribution";
+  dcterms:hasVersion "1.0";
+  dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>;
+  dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
+  dcterms:accessRights <https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690#accessRights>;
+  dcterms:publisher [ a foaf:Agent;
+      foaf:name "Davide Piscia"
+    ];
+  dcterms:isPartOf <https://w3id.org/ejp-rd/fairdatapoints/wp13/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5>;
+  dcat:accessURL <https://platform.rd-connect.eu.eu>;
+  dcat:mediaType "text/html";
+  <https://w3id.org/fdp/fdp-o#metadataIdentifier> <https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690#identifier>;
+  <https://w3id.org/fdp/fdp-o#metadataIssued> "2021-06-24T16:50:01.78082693Z"^^xsd:dateTime;
+  <https://w3id.org/fdp/fdp-o#metadataModified> "2021-10-29T18:02:57.279334824Z"^^xsd:dateTime.
+
+<https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690#identifier>
+  a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690"
+ .
+
+<https://platform.rd-connect.eu/hosting_file/distribution/535bd04a-8e6a-403c-9974-8c01ec13e690#accessRights>
+  a dcterms:RightsStatement;
+  dcterms:description "This resource has  access restriction" .
+
