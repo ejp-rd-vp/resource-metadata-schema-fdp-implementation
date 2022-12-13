@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix ldp: <http://www.w3.org/ns/ldp#> .
 
-<https://platform.rd-connect.eu/hosting_file> a dcat:Resource, dcat:DataService, <https://w3id.org/fdp/fdp-o#MetadataService>,
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository> a dcat:Resource, dcat:DataService, <https://w3id.org/fdp/fdp-o#MetadataService>,
     <https://w3id.org/fdp/fdp-o#FAIRDataPoint>;
   <http://www.w3.org/2000/01/rdf-schema#label> "GPAP FAIR Data Point";
   dcterms:title "GPAP FAIR Data Point";
@@ -22,17 +22,17 @@
   <https://w3id.org/fdp/fdp-o#fdpSoftwareVersion> "version of dataset???";
   dcat:endpointURL <https://platform.rd-connect.eu/hosting_file> .
 
-<https://platform.rd-connect.eu/hosting_file#identifier> a <http://purl.org/spar/datacite/Identifier>;
-  dcterms:identifier "https://platform.rd-connect.eu/hosting_file" .
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#identifier> a <http://purl.org/spar/datacite/Identifier>;
+  dcterms:identifier "https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository" .
 
-<https://platform.rd-connect.eu/hosting_file#accessRights> a dcterms:RightsStatement;
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#accessRights> a dcterms:RightsStatement;
   dcterms:description "This resource needs authentication/registration" .
 
-<https://platform.rd-connect.eu/hosting_file#publisher> a foaf:Agent;
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#publisher> a foaf:Agent;
   foaf:name "CNAG Team" .
 
-<https://platform.rd-connect.eu/hosting_file/catalog/> a ldp:DirectContainer, ldp:DirectContainer;
+<https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset> a ldp:DirectContainer, ldp:DirectContainer;
   dcterms:title "Dataset", "Dataset";
   ldp:hasMemberRelation <http://www.w3.org/ns/dcat#dataset>;
-  ldp:membershipResource <https://platform.rd-connect.eu/hosting_file>, <https://platform.rd-connect.eu/hosting_file>;
-  ldp:contains <https://platform.rd-connect.eu/hosting_file/dataset/5ac59d6d-47ae-4446-8240-0c963e223fa5>.
+  ldp:membershipResource <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository>;
+  ldp:contains <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset>.
