@@ -12,7 +12,7 @@
   dcterms:license <http://rdflicense.appspot.com/rdflicense/cc-by-nc-nd3.0>;
   dcterms:description "FAIR Data Point to describe dataset used in GPAP";
   dcterms:language <http://id.loc.gov/vocabulary/iso639-1/en>;
-  <http://www.re3data.org/schema/3-0#repositoryIdentifier> <https://platform.rd-connect.eu/hosting_file#identifier>;
+  <http://www.re3data.org/schema/3-0#repositoryIdentifier> <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#identifier>;
   dcterms:accessRights <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#accessRights>;
   dcterms:publisher <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#publisher>;
   <http://www.w3.org/ns/dcat#dataset> <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset> ;
@@ -20,7 +20,7 @@
   <https://w3id.org/fdp/fdp-o#metadataIssued> "2021-06-23T10:34:34.293606662Z"^^xsd:dateTime;
   <https://w3id.org/fdp/fdp-o#metadataModified> "2022-09-08T14:37:19.372452382Z"^^xsd:dateTime;
   <https://w3id.org/fdp/fdp-o#fdpSoftwareVersion> "1.15";
-  dcat:dataset <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset>
+  dct:hasPart <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset>
   dcat:endpointURL <https://platform.rd-connect.eu/hosting_file> .
 
 <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository#identifier> a <http://purl.org/spar/datacite/Identifier>;
@@ -33,7 +33,7 @@
   foaf:name "CNAG Team" .
 
 <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset> a ldp:DirectContainer, ldp:DirectContainer;
-  dcterms:title "Dataset", "Dataset";
-  ldp:hasMemberRelation <http://www.w3.org/ns/dcat#dataset>;
+  dcterms:title "Dataset";
+  ldp:hasMemberRelation dct:hasPart;
   ldp:membershipResource <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/repository>;
   ldp:contains <https://github.com/ejp-rd-vp/resource-metadata-schema-fdp-implementation/raw/main/gpap-fdp-metadata-example/dataset>.
